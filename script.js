@@ -17,11 +17,11 @@ console.log('reading js');
 }*/
 //connect myCanvas to mySketch
 //function draw() {
-    var string = "Welcome to My Portal.";
+    var string = "//Welcome to My Portal;";
     var typeString = string.split("");
     var mydiv = document.getElementById('mySketch');
     mydiv.addEventListener("mouseover", animate);
-    mydiv.addEventListener("mouseout", stopAnimate);
+    //mydiv.addEventListener("click", changeColor);
   /*if(cSize < 350){
     tParent--;
     ellipse(mouseX, mouseY, cSize, cSize);
@@ -39,7 +39,8 @@ console.log('reading js');
 function animate() {
     typeString.length > 0 ? mydiv.innerHTML += typeString.shift() : clearTimeout(running); 
     var running = setTimeout(animate, 90);
+    document.getElementById("mySketch").style.color = "white";    
 }
-function stopAnimate() {
-    mydiv.innerHTML = "";
-}
+
+
+
