@@ -6,6 +6,7 @@ html{
 h2{
     font-family: 'Source Code Pro', monospace;
     font-size:2vm;
+    text-align: center;
 }
 
 
@@ -15,10 +16,8 @@ p {
 
 img{
     position: absolute;
-    float: right;
-    display: inline;
-    width: 100%;
-    left: -5px;
+    width: 35%;
+    left: 48%;
 }
 
 fieldset {
@@ -28,7 +27,9 @@ fieldset {
   grid-template-columns: 1fr 2fr;
   justify-content: center;
   grid-gap: .5%;
-  border: 0; /* remove default */
+  border: 0; 
+  
+
 }
 
 form fieldset:last-child div {
@@ -48,10 +49,22 @@ input {
     color: white;
 }
 
+input[type=text]:focus {
+  background-color: limegreen;
+  color: black;
+}
 input[type=text] {
     width: 50%;
 }
+.grow{
+    opacity: 1;
+    transition: all 1.5s ease-in;
 
+}
+.shrink{
+    opacity: 0;
+    transition: all 1.5s ease-in;
+}
 div label {
   display: inline-block;
   margin-bottom: 0.25em;

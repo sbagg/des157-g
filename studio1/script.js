@@ -6,7 +6,7 @@ document.querySelector("#submit").addEventListener('click', processForm);
 document.querySelector("#reset").addEventListener('click', resetForm);
 
 //define process function
-function processForm() {
+function processForm(evt) {
   // capture html form inputs
   var proNoun = document.querySelector("#proNoun").value;
   var adj1 = document.querySelector("#adj1").value;
@@ -19,20 +19,6 @@ function processForm() {
   var myMsg = document.querySelector("#myMsg");
   var msgSection = document.querySelector("#msgSection");
 
-  // easter egg
-  switch (favColor) {
-    case "purple":
-      msgSection.style.backgroundColor = "purple";
-      myMsg.style.color = "antiquewhite";
-      break;
-    case "orange":
-      msgSection.style.backgroundColor = "orange";
-      myMsg.style.color = "black";
-      break;
-    default:
-      msgSection.style.backgroundColor = "#333";
-      myMsg.style.color = "antiquewhite";
-  }
 
   myMsg.innerHTML =
     "Hi, " +
@@ -41,12 +27,15 @@ function processForm() {
     favColor +
     "</em>!  Have a great day!</p>";
 
-  msgSection.className = "show";
+  msgSection.className = "grow";
 
   // prevent page from reloading
-  return false;
+  evt.preventDefault();
 }
 
-function resetForm() {
-  msgSection.className = "hide";
+function submitForm() {
+  msgSection.className = "grow";
+}
+function returnForm() {
+  msgSection.className = "shrink";
 }
