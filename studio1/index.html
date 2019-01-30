@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Sabrina Baggett Portal</title>
+    <title>MadLib</title>
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" >
@@ -11,22 +11,25 @@
 
   </head>
   <body>
-      <img id="bg" src="images/portal.png">
+      <img id="bg" alt="background" src="images/portal.png">
     <header>
       <h1>Sabrina Baggett</h1>
-
     </header>
-
-     <article id="madLibs"> 
-       <!--   <section>
+          <section> 
                 <section id="msg">
                     <h2>Generating Complete</h2>
+                    <p id="madLibsMessage">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <img id="myImg2" alt="happyComputer" src="images/computergif-08.png">
+                <div>
+                  <input type="button" value="Begin Computation" onclick="back()"/>
+              </div>
                 </section> 
-          </section> -->
+          </section> 
+     <article id="mLibs"> 
+
        Generate MadLibs Data...
-       <img src="images/computergif-01.png">
-      
-          <form>
+       <img id="myImg" alt="sadComputer" src="images/computergif-01.png">
+          <form name= "form1">
 
             <fieldset>
               <label for="proNoun">Pronoun</label>
@@ -57,29 +60,18 @@
               <label for="verb2">Verb</label>
               <input type="text" name="verb2" id="verb2" required>
             </fieldset>
-    
-            <fieldset id="radio">
-                <label for="radio">Choose:</label>
-                <div>
-                  <input name="radio" type="radio" value="Lion">
-                  <label>Lion</label>
-                  <br>
-
-                  <input name="radio" type="radio" value="Tiger">
-                  <label>Tiger</label>
-                  <br>
-
-                  <input name="radio" type="radio" value="Bear">
-                  <label>Bear</label>
-                </div>
-            </fieldset>
-               
+           
             <fieldset>
               <div>
-              <input type="reset" value="reset" id="reset"/>
-              <input type="submit" value="submit" id="submit" />
+                  <input type="reset" value="reset" id="r"/>
+                  <input type="submit" value="submit" id="s" />
               </div>
             </fieldset>
+              
+        <div id="myProgress">
+          <div id="myBar"></div>
+        </div>
+              
           </form>
       </article>
     <footer>
