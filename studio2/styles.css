@@ -10,8 +10,8 @@ article{
   padding: 20px;
   margin:0 auto;
   text-align: center;
- width: 950px;
-    height: auto;
+  width: 950px;
+  height: auto;
 }
 
 p {
@@ -151,6 +151,7 @@ section li{
   font-size: .85em;
   width: 50px;
   color: white;
+  margin-bottom: 10px;
 }
 
 a{

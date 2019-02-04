@@ -183,7 +183,7 @@ a:hover{
 footer{
   padding: 15px;
   width: 100%;
-  position: sticky;
+  position: fixed;
   background-color: black;
   color: white;
   text-align: center;

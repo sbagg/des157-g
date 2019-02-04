@@ -151,6 +151,7 @@ section li{
   font-size: .85em;
   width: 50px;
   color: white;
+  margin-bottom: 10px;
 }
 
 a{
@@ -163,7 +164,7 @@ a:hover{
 }
 footer{
   padding: 15px;
-  position: sticky;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
