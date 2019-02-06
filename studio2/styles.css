@@ -23,6 +23,7 @@ svg { height:100% }
   left: 0;
 }
 
+
 .items {
     border: 0px solid;
     border-radius: 25px;
@@ -42,6 +43,7 @@ svg { height:100% }
 
 }
 
+
 footer{
   padding: 15px;
   position: fixed;
@@ -56,11 +58,16 @@ margin: 20px 0px 0px 0px;
 
 #backpack {
    margin: 10% 40%;
-   display:none;
+   display:block;
 }
 
 #item1 {
-    display:block;
+    display:none;
+
+}
+#item1 > img{
+    width: 23em;
+    margin: 75px auto;
 }
 #item2 {
     display:none;
@@ -69,3 +76,19 @@ margin: 20px 0px 0px 0px;
     display:none;
 }
 
+@media only screen and (min-width: 769px) {
+    #item1 > img{
+        width: 32em;
+    }
+    #item2 > img{
+        width: 32em;
+    }
+    #item3 > img{
+        width: 32em;
+    }
+    #backpack{
+        width: 25em;
+        margin: 175px auto;
+
+    }
+}
