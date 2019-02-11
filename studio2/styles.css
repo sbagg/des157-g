@@ -249,24 +249,24 @@ margin: 20px 0px 0px 0px;
 #close1 {
   position: relative;
   text-align: right;
-    color: blue;
-    cursor: pointer;
-        font-size: 2.10em;
+  color: blue;
+  cursor: pointer;
+  font-size: 2.10em;
 
 }
 #close2 {
   position: relative;
   text-align: right;
-    font-size: 2.10em;
-    color: blue;
-    cursor: pointer;
+  font-size: 2.10em;
+  color: blue;
+  cursor: pointer;
 }
 #close3 {
   position: relative;
   text-align: right;
-    color: blue;
-    cursor: pointer;
-        font-size: 2.10em;
+  color: blue;
+  cursor: pointer;
+  font-size: 2.10em;
 
 }
 #m1 {
