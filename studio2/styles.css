@@ -37,8 +37,57 @@ svg { height:100% }
   left: 0;
   display: block;
 }
+.items_mobile {
+    border: 0px solid;
+    border-radius: 25px;
+    border-width: thick;
+    padding: 20px;
+    display: none;
+    width: 60%;
+    height: 575px;
+    padding: 20px;
+    margin: 30px auto;
+    font-family: 'Source Code Pro', monospace;
+    font-size: .80em;
+    box-shadow: 5px 10px 18px black;
+    background-color: rgb(0,10,35,.60);  
+    text-align: center;  
 
+}
+.items_mobile2 {
+    border: 0px solid;
+    border-radius: 25px;
+    border-width: thick;
+    padding: 20px;
+    display: none;
+    width: 60%;
+    height: 575px;
+    padding: 20px;
+    margin: 30px auto;
+    font-family: 'Source Code Pro', monospace;
+    font-size: .80em;
+    box-shadow: 5px 10px 18px black;
+    background-color: rgb(0,10,35,.60);  
+    text-align: center;  
 
+}
+.items_mobile3 {
+    border: 0px solid;
+    border-radius: 25px;
+    border-width: thick;
+    padding: 20px;
+    display: none;
+    width: 60%;
+    height: 575px;
+    padding: 20px;
+    margin: 30px auto;
+    font-family: 'Source Code Pro', monospace;
+    font-size: .80em;
+    box-shadow: 5px 10px 18px black;
+    background-color: rgb(0,10,35,.60);  
+    text-align: center;  
+
+}
 .items {
     border: 0px solid;
     border-radius: 25px;
@@ -72,13 +121,13 @@ margin: 20px 0px 0px 0px;
 }
 
 @keyframes example {
-    from, to { background-color: yellow; }
-    33% { background-color: green; }
-    66% { background-color: blue; }
+    from, to { width: 50px; height:30px; }
+    33% { width: 125px; height:40px;}
+    66% { width: 200px; height:50px;}
 }
 
 #shadow{
-    margin: 0px auto;
+    margin: 25px auto;
     width: 300px;
     height: 30px;
     border: 0px solid;
@@ -89,11 +138,16 @@ margin: 20px 0px 0px 0px;
       animation-iteration-count: infinite;
 }
  
+#backpack_mobile {
+   margin: 10% auto;
+   display:block;
+}
 
 #backpack {
    margin: 10% auto;
    display:block;
 }
+
 
 #item1 {
     display:none;
@@ -106,8 +160,18 @@ margin: 20px 0px 0px 0px;
 #item2 {
     display:none;
 }
+
+#item2 > img{
+    width: 23em;
+    margin: 75px auto;
+}
 #item3 {
     display:none;
+}
+
+#item3 > img{
+    width: 23em;
+    margin: 75px auto;
 }
 
 @media only screen and (min-width: 769px) {
@@ -120,11 +184,7 @@ margin: 20px 0px 0px 0px;
     #item3 > img{
         width: 32em;
     }
-    #backpack{
-        width: 25em;
-        margin: 175px auto;
 
-    }
     #bg1 {
       /* Set rules to fill background */
       min-height: 100%;
@@ -153,20 +213,62 @@ margin: 20px 0px 0px 0px;
       left: 0;
       display: none;
     }
-    
+    @keyframes example {
+        from, to { width: 50px; height:30px; }
+        33% { width: 125px; height:40px;}
+        66% { width: 200px; height:50px;}
+    }
+
+
+    #shadow{
+        margin: 75px auto;
+        width: 300px;
+        height: 30px;
+        border: 0px solid;
+        border-radius: 100px;
+        background-color: rgb(0,10,5,.85);
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
 }
-.modelButton {
+
+.modelButton_mobile {
     position: absolute;
     width: 30px;
     height: 30px;
     border: 2px solid;
     border-radius: 10px;
-    border-color: limegreen;
-    background-color: rgb(0,35,15,.75);  
-   
+    border-color: blue;
+    background-color: rgb(0,15,15,.75);  
+    display: block;
     
 }
 
+#close1 {
+  position: relative;
+  text-align: right;
+    color: blue;
+    cursor: pointer;
+        font-size: 2.10em;
+
+}
+#close2 {
+  position: relative;
+  text-align: right;
+    font-size: 2.10em;
+    color: blue;
+    cursor: pointer;
+}
+#close3 {
+  position: relative;
+  text-align: right;
+    color: blue;
+    cursor: pointer;
+        font-size: 2.10em;
+
+}
 #m1 {
     
     margin-left: calc(50% + 130px);
@@ -187,8 +289,9 @@ margin: 20px 0px 0px 0px;
     margin-left: calc(50% + 130px);
     margin-top: 65px;
     transition: all 0.5s ease-out;
-    background-color: limegreen;
-    width: 100px;
+    background-color: royalblue;
+    width: 45px;
+    height: 45px;
     
 }
 #m2:hover {
@@ -196,14 +299,40 @@ margin: 20px 0px 0px 0px;
     margin-left: calc(50% - 165px);
     margin-top: 210px;
     transition: all 0.5s ease-out;
-    background-color: limegreen;
-    width: 100px;
+    background-color: royalblue;
+    width: 45px;
+    height: 45px;
 }
 #m3:hover {
     
     margin-left: calc(50% + 200px);
     margin-top: 200px;
     transition: all 0.5s ease-out;
-    background-color: limegreen;
-    width: 100px;
+    background-color: royalblue;
+    width: 45px;
+    height: 45px;}
+
+#dBox {
+    border: 0px solid;
+    border-radius: 25px;
+    border-width: thick;
+    padding: 20px;
+    display: none;
+    width: 60%;
+    height: 50px;
+    padding: 20px;
+    margin: 30px auto;
+    font-family: 'Source Code Pro', monospace;
+    font-size: .80em;
+    box-shadow: 5px 10px 18px black;
+    background-color: rgb(0,10,35,.60);  
+    text-align: left;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: #00B233;
+  text-decoration: none;
 }
