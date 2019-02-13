@@ -34,13 +34,14 @@ m3.onclick = function(){
    typeString = string3.split("");
 }
 dBox.addEventListener("mouseover", animate);
+/*Typewriter animation*/
 
 function animate() {
     typeString.length > 0 ? dBox.innerHTML += typeString.shift() : clearTimeout(running); 
     var running = setTimeout(animate, 90);
     document.getElementById("dBox").style.color = "white";    
 }
-
+/*Function used to switch between mobile and desktop*/
 function myFunction() {
     if($(window).width() >= 769) {
         m1.style.borderColor = "limegreen";
@@ -95,6 +96,7 @@ close3.addEventListener("click" ,function(){
 
     location.reload();
 });
+/*Item boxes*/
 
 function item1(){
     i1.style.display= "block";
