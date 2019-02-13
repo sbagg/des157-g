@@ -5,6 +5,11 @@ Score
 Timer
 Reset button
 + go full screen
+adding lifespan
+color scheme
+background
+transistions of shapes 
+as you click by 5's, the size shrinks
 */
 
 "use strict";
@@ -26,7 +31,8 @@ var reset = document.querySelector("#stop");
 var gameOverImg = document.querySelector('#gameOverImg');
 var gameOverAnim; // animation 
 var gameOverX = -200; // x positgameOverXion of graphic
-
+var life = document.querySelector("#lifes");
+var lifeCount = 0;
 /* setInterval invokes a callback function repeatedly with a designated delay in milliseconds */
 var pixelInterval = setInterval(movePixel, 2000); // change the second parameter to move the pixel faster/slower
 var countInterval = setInterval(countDown, 1000); // to display Time Remaining
@@ -72,6 +78,20 @@ function movePixel() {
 function updateScore() {
   scoreCount++;
   score.innerHTML = "Score: " + scoreCount;
+  if((scoreCount % 3) == 0){
+      lifeCount++;
+  }
+  life.innerHTML = "Life " + lifeCount; 
+    if(scoreCount == 5){
+      pixel.style.width = pixelW - 10 + "px";
+      pixel.style.height = pixelH - 10 + "px";
+    }else if(scoreCount == 10){
+      pixel.style.width = pixelW - 15 + "px";
+      pixel.style.height = pixelH - 15 + "px";
+    }else if(scoreCount == 15){
+      pixel.style.width = pixelW - 25 + "px";
+      pixel.style.height = pixelH - 25 + "px";
+    }    
 }
 
 // update the time remaining and display in UI
@@ -140,10 +160,14 @@ function resetGame() {
   
   // reset scoreCount, count, gameOverX and pixel
   scoreCount = 0;
+  lifeCount = -0;
   count = 10;
   gameOverX = -200;
   pixel.style.display = 'block';
-
+  pixelW = 45;
+  pixelH = 45;
+  pixel.style.width = pixelW;
+  pixel.style.height = pixelH;
   // update interface
   timeLeft.innerHTML = "Time Remaining: " + count;
   score.innerHTML = "Score: " + scoreCount;
