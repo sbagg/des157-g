@@ -16,6 +16,7 @@ article{
 
 p {
     color: white;
+    text-align: left;
 }
 #bg {
   /* Set rules to fill background */
@@ -30,6 +31,14 @@ p {
   position: fixed;
   top: 0;
   left: 0;
+}
+li {
+    text-align: left;
+    color: white;
+}
+h2 {
+    text-align: left;
+    color: limegreen;
 }
 #imgPic{
     margin:0 auto;
@@ -136,7 +145,7 @@ section > section {
   line-height: 1;
 }
 h2{
-  position: absolute;
+  
   color: white;
   font-size: 12pt;
 }
@@ -151,6 +160,7 @@ section li{
   font-size: .85em;
   width: 50px;
   color: white;
+    
 }
 
 a{
