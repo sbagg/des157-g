@@ -1,0 +1,80 @@
+html{
+  width: auto;
+  height: 768px;
+}
+
+#bg1{
+        min-height: 100%;
+      min-width: 1024px;
+      z-index: -2;
+      /* Set up proportionate scaling */
+      width: 100%;
+
+      /* Set up positioning */
+      position: fixed;
+      top: 0;
+      left: 0;
+    display: block;
+}
+#bg2{
+    min-height: 100%;
+  min-width: 1024px;
+  z-index: -2;
+  /* Set up proportionate scaling */
+  width: 100%;
+ 
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+    display: none;
+}
+
+a{
+  color: deepskyblue;
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+  text-decoration: none;
+}
+footer{
+  padding: 15px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightcyan;
+  color: black;
+  text-align: center;
+margin: 20px 0px 0px 0px;
+}
+@media only screen and (min-width: 769px) {
+/*   background: url(image/Background_desktop.png) no-repeat;*/
+    #bg1{
+        min-height: 100%;
+  min-width: 1024px;
+  z-index: -2;
+  /* Set up proportionate scaling */
+  width: 100%;
+ 
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+        display: none;
+    }
+    #bg2{
+        min-height: 100%;
+  min-width: 1024px;
+  z-index: -2;
+  /* Set up proportionate scaling */
+  width: 100%;
+ 
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+        display: block;
+    }
+}
