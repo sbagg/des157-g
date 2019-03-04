@@ -79,3 +79,16 @@ nav li{
 #page5 {
   background-color:grey;
 }
+footer{
+  padding: 15px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightcyan;
+  color: black;
+  text-align: center;
+margin: 20px 0px 0px 0px;
+        box-shadow: 10px 0px 50px 0px;
+
+}
