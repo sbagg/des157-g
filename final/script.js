@@ -5,7 +5,7 @@ console.log('reading js');
 var pages = document.querySelectorAll(".page");
 
 // get each link
-
+var article = document.querySelectorAll("article");
 var p1 = document.querySelector("#p1");
 var p2 = document.querySelector("#p2");
 var p3 = document.querySelector("#p3");
@@ -19,6 +19,10 @@ var footer = document.querySelector("footer");
 // show the first article
 pages[0].style.display = "none";
 
+
+article[3].addEventListener('click', function(){
+    document.location.href = "create/music/index.html";
+})
 // add event listeners to links
 p1.addEventListener('click', function(){
   hidePages();
@@ -80,6 +84,7 @@ explore.addEventListener('click', function(){
   header.style.display = "none";
   nav.style.backgroundColor = "green";
   footer.style.backgroundColor = "green";
+  
   section[0].style.backgroundColor = "#B658A2";
   section[1].style.backgroundColor = "#F4A42E";
   section[2].style.backgroundColor = "#60C8D3";
@@ -139,6 +144,7 @@ section[3].addEventListener('click', function(){
 //})
 
 // function to hide all articles
+
 function hidePages() {
   for (var i = 0; i < pages.length; i++) {
     console.log('hide pages');
