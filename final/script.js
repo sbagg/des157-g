@@ -79,7 +79,11 @@ explore.addEventListener('click', function(){
   pages[5].style.opacity = "white";
   header.style.display = "none";
   nav.style.backgroundColor = "green";
-  footer.style.backgroundColor = "green";  
+  footer.style.backgroundColor = "green";
+  section[0].style.backgroundColor = "#B658A2";
+  section[1].style.backgroundColor = "#F4A42E";
+  section[2].style.backgroundColor = "#60C8D3";
+  section[3].style.backgroundColor = "green";
   
 })
 section[0].addEventListener('click', function(){

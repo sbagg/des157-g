@@ -159,6 +159,7 @@ section{
     color: black;
     opacity: .75;
     z-index: 10;
+    
 }
 section:hover{
     opacity: 1;
