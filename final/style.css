@@ -141,8 +141,7 @@ transition: all 2s;
 h2{
     padding-top: .1em;
     margin-right: .25em;
-    text-align: right;
-    
+    font-size: .95em;
 } 
 p{
     text-align: left;
@@ -205,6 +204,7 @@ article:hover{
     opacity:1;
 }
 article{
+    
     opacity:.75;
 }
 #page1 {
@@ -218,6 +218,14 @@ article{
 }
 
 #page4 {
+
+  border-radius: 1000px;
+  border: 8.5px solid #60C8D3;
+  padding: 20px; 
+  width: 370px;
+  height: 350px; 
+  margin: 2.5em auto 0;
+  background-color:white;
 }
 
 #page5 {
@@ -243,4 +251,31 @@ footer{
   box-shadow: 10px 0px 50px 0px;
   transition: all 2s;
 
+}
+#music {
+    position: absolute;
+    margin: -1em 1.5em;
+    background-color:white;
+}
+#music:hover{
+    color:#60C8D3;
+    cursor: pointer;
+}
+#drama {
+    background-color:white;
+    position: absolute;
+    margin: 5em 1.5em 0;
+}
+#drama:hover{
+    color:#60C8D3;
+    cursor: pointer;
+}
+#page4small {
+  border-radius: 1000px;
+  border: 8.5px solid #60C8D3;
+  padding: 20px; 
+  width: 175px;
+  height: 175px; 
+  margin: .87em auto;
+  background-color:#60C8D3;
 }

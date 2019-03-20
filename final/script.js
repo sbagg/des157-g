@@ -18,9 +18,11 @@ var nav = document.querySelector("nav");
 var footer = document.querySelector("footer");
 // show the first article
 pages[0].style.display = "none";
+var music = document.querySelector("#music");
+var smallCircle = document.querySelector("#page4small");
 
 
-article[3].addEventListener('click', function(){
+music.addEventListener('click', function(){
     document.location.href = "create/music/index.html";
 })
 // add event listeners to links
@@ -58,7 +60,7 @@ p3.addEventListener('click', function(){
 p4.addEventListener('click', function(){
   hidePages();
   pages[3].style.display = "block";
-  pages[3].style.backgroundColor = "#60C8D3";
+  smallCircle.style.display = "block";
   header.style.display = "none";
   explore.style.display = "none";
   nav.style.backgroundColor = "#60C8D3";
