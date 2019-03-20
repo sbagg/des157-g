@@ -17,19 +17,20 @@ create.addEventListener('click', function(e){
     //create.style.display = "none";
    
     create.style.width= "85%";
+    formData.style.display = "block";
     create.style.left= "7%";
-    create.style.top= "15%";
-    create.style.height="65%";
+    create.style.top= "32.25%;";
+    create.style.height="45em";
     create.style.transition = "all 1.5s";
+    
     back.style.transition = "all 1.5s";
-    back.style.left= "40%";
-    back.style.marginTop= "2%";
+    back.style.left= "42%";
+    back.style.marginTop= "7%";
     welcome.style.display = "none";
-    notes.style.display = "block";
     add.style.display = "block";
     finish.style.display = "block";
     deleteButton.style.display = "block";
-    formData.style.display = "block";
+    
     e.preventDefault();
 
 });

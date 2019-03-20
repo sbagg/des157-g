@@ -19,11 +19,15 @@ var footer = document.querySelector("footer");
 // show the first article
 pages[0].style.display = "none";
 var music = document.querySelector("#music");
+var drama = document.querySelector("#drama");
 var smallCircle = document.querySelector("#page4small");
 
 
 music.addEventListener('click', function(){
     document.location.href = "create/music/index.html";
+})
+drama.addEventListener('click', function(){
+    document.location.href = "create/drama/index.html";
 })
 // add event listeners to links
 p1.addEventListener('click', function(){
