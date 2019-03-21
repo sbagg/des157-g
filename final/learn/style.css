@@ -1,0 +1,426 @@
+html{
+  width: auto;
+  height: 768px;
+background-color: rgba(244, 164, 46, 0.25);
+}
+
+#bg1{
+        min-height: 100%;
+      min-width: 1024px;
+      z-index: -2;
+      /* Set up proportionate scaling */
+      width: 100%;
+
+      /* Set up positioning */
+      position: fixed;
+      top: 0;
+      left: 0;
+    display: block;
+    border: none;
+}
+#bg2{
+    min-height: 100%;
+  min-width: 1024px;
+  z-index: -2;
+  /* Set up proportionate scaling */
+  width: 100%;
+ 
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  border: none;
+}
+
+a{
+  color: deepskyblue;
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+  text-decoration: none;
+}
+footer{
+  padding: 15px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightcyan;
+  color: black;
+  text-align: center;
+margin: 20px 0px 0px 0px;
+        box-shadow: 10px 0px 50px 0px;
+
+}
+h1{
+    font-size: 20pt;
+    
+}
+article{
+    position: absolute;
+    width: 35%;
+    height: auto;
+    padding: 20px;
+    color: #F4A42E;
+    border-radius: 25px;
+    border: 0px solid;
+    top: 32.25%;
+    left: 35%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2.75em;
+    box-shadow: 0px 0px 0px black;
+    text-align: center;
+    background-color: rgb(245,245,245,.75);
+    display:block;
+    animation: box-shadow 2.5s infinite;
+}
+article:hover{
+    cursor: pointer;
+    position: absolute;
+    width: 35%;
+    height: auto;
+    padding: 20px;
+    color: white;
+    border-radius: 25px;
+    border: 0px solid;
+    top: 32.25%;
+    left: 35%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2.75em;
+    box-shadow: 0px 0px 0px black;
+    text-align: center;
+    background-color: #F4A42E;
+    opacity: .75;
+    animation: box-shadow 2.5s infinite;
+}
+@keyframes box-shadow {
+  0% {
+    box-shadow: 5px 0px 10px black;
+  }
+  25% {
+    box-shadow: 5px 0px 35px black;
+  }
+  50% {
+    box-shadow: 5px 0px 45px black;
+  }
+  75% {
+    box-shadow: 5px 0px 35px black;
+  }
+  100% {
+    box-shadow: 5px 0px 10px black;
+  }
+}
+section{
+    position: absolute;
+    top: 12%;
+    left: 6%;
+    width: 85%;
+    height: 75%;
+    padding: 15px;
+    color: deepskyblue;
+    border-radius: 25px;
+    border: 0px solid;   
+    box-shadow: 0px 0px 0px black;
+    text-align: center;
+    background-color: deepskyblue;
+    display:none;
+    z-index: -1;
+}
+
+section > section{
+    width: 82%;
+    height: 81%;
+    padding: 20px;
+    color: deepskyblue;
+    border-radius: 25px;
+    border: 0px solid;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2.75em;
+    background-color: rgb(245,245,245,.75);
+    display:inline-flex;
+
+}
+section{
+    display:none;
+}
+.note{   
+    text-align: center;
+    width: 15%;
+    height: 50px;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: deepskyblue;
+    border-radius: 25px;
+    border: 0px solid;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.20em;
+    background-color: rgb(245,245,245,.75);
+    display:inline-block;
+    transition: 1.5s;
+
+}
+.note:hover{
+    background-color:deepskyblue;
+    color: white;
+    
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    border:0;
+    box-shadow: 10px 0px 50px 0px;
+    list-style:none;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+}
+
+.nav a{
+    display:inline-block;
+    padding:10px;
+}
+
+.nav li{
+    display:inline;
+}
+
+.notes{
+    display: block;
+}
+form{
+    text-align: left;
+    font-size: 14px;
+    display:none;
+    border: 0px dotted;
+
+}
+input[type=text]{
+    height: 17em;
+    width: 99%;
+    text-align: left;
+    
+}
+@media only screen and (min-width: 769px) {
+/*   background: url(image/Background_desktop.png) no-repeat;*/
+    
+.nav{
+    position: fixed;
+    width: 100%;
+    border:0;
+    box-shadow: 10px 0px 50px 0px;
+    list-style:none;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+}
+    #bg1{
+        min-height: 100%;
+  min-width: 1024px;
+  z-index: -2;
+  /* Set up proportionate scaling */
+  width: 100%;
+ 
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+    }
+    #bg2{
+        min-height: 100%;
+  min-width: 1024px;
+  z-index: -2;
+  /* Set up proportionate scaling */
+  width: 100%;
+ 
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+        display: block;
+    }
+}
+
+.notes{
+    margin: 0 auto;
+    display: none;
+}
+p{
+    font-size: 15px;
+}
+#scriptMsg{
+    color: white;
+}
+#progress {
+    font-size: 20pt;
+    position: absolute;
+    padding: 16px;
+    top: 85%;
+    left: 77%;
+    background-color: deepskyblue;
+    transition: 1.5s;
+    border-radius: 25px;
+    border: 0px solid;
+    color: white;
+}
+#progress:hover{
+        background-color: darkorange;
+
+}
+
+#backButton {
+    position: relative;
+    width: 15%;
+    height: auto;
+    margin-top: 24.5em;
+    padding: 20px;
+    color: #F4A42E;
+    border-radius: 25px;
+    border: 1px solid;
+    left: 45%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    box-shadow: 0px 0px 0px black;
+    text-align: center;
+    background-color: rgb(245,245,245,.75);
+    display:block;
+}
+#backButton:hover {
+    cursor: pointer;
+    position: relative;
+    margin-top: 24.5em;
+    width: 15%;
+    height: auto;
+    padding: 20px;
+    color: white;
+    border-radius: 25px;
+    border: 1px solid white;
+    top: 55%;
+    left: 45%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    text-align: center;
+    background-color: #F4A42E;
+    display:block;
+}
+
+#add {
+    position: relative;
+    width: 15%;
+    height: auto;
+    margin-top: 123em;
+    padding: 20px;
+    color: deepskyblue;
+    border-radius: 25px;
+    border: 1px solid;
+    left: 15%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    box-shadow: 0px 0px 0px black;
+    text-align: center;
+    background-color: rgb(245,245,245,.75);
+    display:none;
+}
+
+
+#finish {
+   position: relative;
+    width: 15%;
+    height: auto;
+    margin-top:-3.75em;
+    padding: 20px;
+    color: deepskyblue;
+    border-radius: 25px;
+    border: 1px solid;
+    left: 42.75%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    box-shadow: 0px 0px 0px black;
+    text-align: center;
+    background-color: rgb(245,245,245,.75);
+    display:none;
+}
+#add:hover {
+    cursor: pointer;
+    position: relative;
+    margin-top: 123em;
+    width: 15%;
+    height: auto;
+    padding: 20px;
+    color: white;
+    border-radius: 25px;
+    border: 1px solid white;
+    top: 55%;
+    left: 15%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    text-align: center;
+    background-color: deepskyblue;
+    display:block;
+}
+#delete {
+    cursor: pointer;
+    position: relative;
+    margin-top: -3.75em;
+    width: 15%;
+    height: auto;
+    padding: 20px;
+    color: deepskyblue;
+    border-radius: 25px;
+    border: 1px solid;
+    left: 70%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    text-align: center;
+    background-color: rgb(245,245,245,.75);
+    display:none;
+}
+#delete:hover {
+    cursor: pointer;
+    position: relative;
+    margin-top: -3.75em;
+    width: 15%;
+    height: auto;
+    padding: 20px;
+    color: white;
+    border-radius: 25px;
+    border: 1px solid white;
+    top: 55%;
+    left: 70%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    text-align: center;
+    background-color: deepskyblue;
+    display:none;
+}
+
+#finish:hover {
+    cursor: pointer;
+    position: relative;
+    margin-top: -3.75em;
+    width: 15%;
+    height: auto;
+    padding: 20px;
+    color: white;
+    border-radius: 25px;
+    border: 1px solid white;
+    top: 55%;
+    left: 42.75%;;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    text-align: center;
+    background-color: deepskyblue;
+    display:none;
+}
+#scriptSection {
+    z-index:-2;
+}

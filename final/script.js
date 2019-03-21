@@ -11,6 +11,7 @@ var p2 = document.querySelector("#p2");
 var p3 = document.querySelector("#p3");
 var p4 = document.querySelector("#p4");
 var p5 = document.querySelector("#p5");
+var learn = document.querySelector("#page3");
 var explore = document.querySelector("#text");
 var section = document.querySelectorAll("section");
 var header = document.querySelector("#header");
@@ -22,7 +23,9 @@ var music = document.querySelector("#music");
 var drama = document.querySelector("#drama");
 var smallCircle = document.querySelector("#page4small");
 
-
+learn.addEventListener('click', function(){
+    document.location.href = "learn/index.html";
+});
 music.addEventListener('click', function(){
     document.location.href = "create/music/index.html";
 })
